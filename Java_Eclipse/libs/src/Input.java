@@ -1,4 +1,4 @@
-package lib;
+
 
 import java.io.IOException;
 public class Input {
@@ -7,9 +7,9 @@ public class Input {
     public  static  final   int     CR_LEN  =   CR.length();
 
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚ç•¶š‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ç•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½•¶ši‚P•¶šj
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½j
      */
     public  static  char getChar(){
         return  getChar("char");
@@ -27,9 +27,9 @@ public class Input {
         return  c;
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚ç•¶š‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ç•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½•¶ši‚P•¶šj
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½j
      */
     public  static  byte getByte(){
         return  getByte("byte");
@@ -48,9 +48,9 @@ public class Input {
 
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚ç•¶š—ñ‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ç•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½•¶š—ñ
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  String  getString(){
         
@@ -68,9 +68,9 @@ public class Input {
 
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚çshort®”‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½shortï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½®”
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  short   getShort(){
         return  getShort("short");
@@ -89,9 +89,9 @@ public class Input {
         
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚ç®”‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ç®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½®”
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  int getInt(){
         return  getInt("int");
@@ -110,9 +110,9 @@ public class Input {
         
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚çlong®”‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½longï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½®”
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  long    getLong(){
         return  getLong("long");
@@ -131,9 +131,9 @@ public class Input {
         
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚çDouble‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Doubleï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½À”
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  double  getDouble(){
         return  getDouble("double");
@@ -152,9 +152,9 @@ public class Input {
         
     }
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚çFloat‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Floatï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * 
-     * @return  “ü—Í‚µ‚½À”
+     * @return  ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public  static  float  getFloat(){
         return  getFloat("float");
@@ -173,7 +173,7 @@ public class Input {
         
     }    
     /**
-     * ƒRƒ“ƒ\[ƒ‹‚©‚ç•¶š—ñ‚ğ“ü—Í‚·‚é
+     * ï¿½Rï¿½ï¿½ï¿½\ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ç•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½
      * @param s
      * @return
      */
