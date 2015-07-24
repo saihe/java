@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+
+public class operation {
+	//各項目毎配列
+	ArrayList<String> date = new ArrayList<String>();
+	ArrayList<String> time = new ArrayList<String>();
+	ArrayList<String> what = new ArrayList<String>();
+	ArrayList<String> plus = new ArrayList<String>();
+	ArrayList<String> minus = new ArrayList<String>();
+	ArrayList<String> result = new ArrayList<String>();
+
+	//データまとめリスト
+	String[][] list = new String[6][];
+
+
+
+	//日付入力
+	public ArrayList<String> getDate(int d){
+		String sd = String.valueOf(d);
+		date.add(sd);
+		return date;
+	}
+
+	//時間入力
+	public ArrayList<String> getTime(int t){
+		String st = String.valueOf(t);
+		time.add(st);
+		return time;
+	}
+
+	//科目入力
+	public ArrayList<String> getWhat(String w){
+		String sw = String.valueOf(w);
+		what.add(sw);
+		return what;
+	}
+
+	//入金・出金入力、残高計算・入力
+	public ArrayList<String> getResult(int p , int m){
+		int total = p - m ;
+		String sp = String.valueOf(p);
+		String sm = String.valueOf(m);
+		plus.add(sp);
+		minus.add(sm);
+		String sr = String.valueOf(total);
+		result.add(sr);
+		return result;
+	}
+
+	//削除
+
+	public String[][] delete(){
+		list = new String[6][date.size()];
+		return list;
+	}
+
+	//データをを配列
+	public String[][] listUp(){
+		for(int i = 0; i <= date.size() ; i++){
+			list[0][i] = date.get(i);
+			list[1][i] = time.get(i);
+			list[2][i] = what.get(i);
+			list[3][i] = plus.get(i);
+			list[4][i] = minus.get(i);
+			list[5][i] = result.get(i);
+		}
+		return list;
+	}
+}

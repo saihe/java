@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Result{
+	static ArrayList<Integer> result = new ArrayList<Integer>();
+	static ArrayList<Integer> plus = new ArrayList<Integer>();
+	static ArrayList<Integer> minus = new ArrayList<Integer>();
+
+	public static ArrayList<Integer> getResult(Integer r){
+	result.add(r);
+	return result;
+	}
+
+	public static ArrayList<Integer> getPlus(Integer p){
+		plus.add(p);
+		return plus;
+	}
+
+	public static ArrayList<Integer> getPlus(Integer p){
+		plus.add(p);
+		return plus;
+	}
+}

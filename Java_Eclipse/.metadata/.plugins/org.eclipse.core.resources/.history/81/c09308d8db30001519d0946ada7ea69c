@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Result{
+	static ArrayList<Integer> result = new ArrayList<Integer>();
+	static ArrayList<Integer> plus = new ArrayList<Integer>();
+	static ArrayList<Integer> minus = new ArrayList<Integer>();
+
+	//残高計算
+	public static ArrayList<Integer> getResult(Integer p , Integer m){
+	result.add(r);
+	return result;
+	}
+
+	//入金
+	public static ArrayList<Integer> getPlus(Integer p){
+		plus.add(p);
+		return plus;
+	}
+
+	//出金
+	public static ArrayList<Integer> getMinus(Integer m){
+		minus.add(m);
+		return minus;
+	}
+}

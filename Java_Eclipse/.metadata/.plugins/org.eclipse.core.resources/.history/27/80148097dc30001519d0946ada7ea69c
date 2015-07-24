@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Time {
+	static ArrayList<Integer> time = new ArrayList<Integer>();
+
+	public static ArrayList<Integer> getTime(int t){
+	time.add(t);
+	return time;
+	}
+}

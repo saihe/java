@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Time {
+	static ArrayList<String> time = new ArrayList<String>();
+
+	public ArrayList<String> getTime(int t){
+		String st = String.valueOf(t);
+		time.add(st);
+		return time;
+	}
+}

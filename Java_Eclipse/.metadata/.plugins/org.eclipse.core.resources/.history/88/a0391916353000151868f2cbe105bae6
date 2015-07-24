@@ -1,0 +1,7 @@
+import java.util.Calendar;
+
+public class Date (){
+	Calendar calendar = Calendar.getInstance();
+	int year = calendar.get(Calendar.YEAR);
+	return year;
+}

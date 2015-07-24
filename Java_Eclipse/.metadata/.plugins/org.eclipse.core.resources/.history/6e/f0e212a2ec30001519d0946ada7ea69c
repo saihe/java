@@ -1,0 +1,24 @@
+public class Data {
+	String[][] data = new String[6][];
+	//ArrayList<ArrayList<String>> list = new ArrayList<ArrayList <String>>();
+	//ArrayList<String> data = new ArrayList<String>();
+	//data.add(op.time.get(i));
+	//list.add(data);
+
+	operation op = new operation();
+
+	//日付を配列
+	public String[][] up(){
+		for(int i = 0; i < op.date.size() ; i++){
+			data[0][i] = op.date.get(i);
+			data[1][i] = op.time.get(i);
+			data[2][i] = op.what.get(i);
+			data[3][i] = op.plus.get(i);
+			data[4][i] = op.minus.get(i);
+			data[5][i] = op.result.get(i);
+		}
+		return data;
+	}
+
+
+}

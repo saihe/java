@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class Date{
+	static ArrayList<String> date = new ArrayList<String>();
+
+	public ArrayList<String> getDate(int d){
+
+		date.add();
+		return date;
+	}
+
+}

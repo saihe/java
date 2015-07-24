@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Result{
+	static ArrayList<String> result = new ArrayList<String>();
+	static ArrayList<String> plus = new ArrayList<String>();
+	static ArrayList<String> minus = new ArrayList<String>();
+
+
+
+	//入金・出金入力、残高計算・入力
+	public ArrayList<String> getResult(int p , int m){
+		int total = p - m ;
+		String sp = String.valueOf(p);
+		String sm = String.valueOf(m);
+		plus.add(sp);
+		minus.add(sm);
+		String sr = String.valueOf(total);
+		result.add(sr);
+		return result;
+	}
+
+}

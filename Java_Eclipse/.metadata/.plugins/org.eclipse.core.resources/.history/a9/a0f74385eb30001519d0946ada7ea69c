@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class Data {
+	String[][] data = new String[6][];
+	//ArrayList<ArrayList<String>> list = new ArrayList<ArrayList <String>>();
+	//ArrayList<String> data = new ArrayList<String>();
+	//data.add(op.time.get(i));
+	//list.add(data);
+
+	operation op = new operation();
+
+	//日付を配列
+	public String[][] dateUp(){
+		for(int i = 0; i < op.date.size() ; i++){
+			data[0] = op.date.get(i);
+		}
+		return data[0];
+	}
+
+	//時間を配列
+	public ArrayList<ArrayList<String>> timeUp(){
+		for(int i = 0; i < op.date.size() ; i++){
+			data.add(op.time.get(i));
+			list.add(data);
+		}
+		return list;
+	}
+
+	//科目を配列
+	public ArrayList<ArrayList<String>> whatUp(){
+		for(int i = 0; i < op.date.size() ; i++){
+			data.add(op.time.get(i));
+			list.add(data);
+		}
+		return list;
+	}
+
+
+}

@@ -1,0 +1,69 @@
+import lib.Input;
+
+public class Note {
+
+	public static void main(String[] args) {
+
+		//Console console = System.console();
+		operation op = new operation();
+
+		//お小遣い帳部分
+		while(true){
+			System.out.print("1(入力)か2(閲覧)か3(削除)を入力");
+			int select = Input.getInt();
+			if(select == 1){
+				//登録
+				System.out.println("登録します");
+				System.out.print("日付を入力：");
+				op.getDate(Input.getInt());
+				System.out.print("時間を入力：");
+				op.getTime(Input.getInt());
+				System.out.print("科目を入力：");
+				op.getWhat(Input.getString());
+				System.out.print("入金を入力：");
+				int pm = Input.getInt();
+				System.out.print("出金を入力：");
+				int mm = Input.getInt();
+				op.getResult(pm , mm);
+				continue;
+			}
+			else if(select == 2){
+				//閲覧
+				System.out.println("閲覧します");
+				System.out.println("日付\t時間\t科目\t入金\t出金\t残金\t");
+				//System.out.println(op.date.get(0));
+				op.listUp();
+				//op.list[0][0] = "9";
+				//System.out.println(op.list[0][0]);
+
+				for(int i = 0; i < 6 ; i++){
+					System.out.print(op.list[0][i] + "日\t\t");
+					System.out.print(op.list[1][i] + "\t\t");
+					System.out.print(op.list[2][i] + "\t\t");
+					System.out.print(op.list[3][i] + "円\t\t");
+					System.out.print(op.list[4][i] + "円\t\t");
+					System.out.println(op.list[5][i] + "円");
+				}
+
+				continue;
+			}else if( select == 3){
+				//削除
+				System.out.println("削除します");
+				System.out.println("実行：1　キャンセル：その他のキー");
+				int d = Input.getInt();
+				switch(d){
+				case 1:
+					op.delete();
+					System.out.println("削除しました");
+					break;
+				default:
+					break;
+				}
+				continue;
+			}else{
+				System.out.println("コマンドエラー");
+				continue;
+			}
+		}
+	}
+}

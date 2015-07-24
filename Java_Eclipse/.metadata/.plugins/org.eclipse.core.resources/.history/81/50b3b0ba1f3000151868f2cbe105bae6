@@ -1,0 +1,8 @@
+import lib.Input;
+
+public class Dentaku1 {
+
+	public static void main(String[] args){
+
+	}
+}

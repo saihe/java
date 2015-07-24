@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class Result{
+	static ArrayList<Integer> result = new ArrayList<Integer>();
+	static ArrayList<Integer> plus = new ArrayList<Integer>();
+	static ArrayList<String> minus = new ArrayList<String>();
+
+
+	//入金
+	public ArrayList<Integer> getPlus(Integer p){
+		plus.add(p);
+		return plus;
+	}
+
+	//出金
+	public ArrayList<Integer> getMinus(Integer m){
+		minus.add(m);
+		return minus;
+	}
+
+	//残高計算
+	public ArrayList<String> getResult(String r){
+		String sr = String.valueOf(r);
+		result.add(sr);
+		return result;
+	}
+
+}

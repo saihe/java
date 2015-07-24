@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class ResultMoney {
+	static ArrayList<String> result = new ArrayList<String>();
+
+	public static ArrayList<String> getResult(String d){
+	result.add(d);
+	return result;
+	}
+}

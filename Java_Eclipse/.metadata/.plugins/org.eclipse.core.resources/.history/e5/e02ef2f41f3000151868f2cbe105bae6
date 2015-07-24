@@ -1,0 +1,10 @@
+public class Dentaku1 {
+
+	public static void main(String[] args){
+		int n;
+		int total =0;
+		shile((n = Input.getInt()) ! = 0){
+
+		}
+	}
+}

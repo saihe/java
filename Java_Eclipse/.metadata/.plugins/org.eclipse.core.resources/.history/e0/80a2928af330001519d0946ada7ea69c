@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class What {
+	static ArrayList<String> what = new ArrayList<String>();
+
+	public ArrayList<String> getWhat(String w){
+		String sw = String.valueOf(w);
+		what.add(sw);
+		return what;
+	}
+}
