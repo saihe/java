@@ -4,21 +4,26 @@ import java.util.Random;
 public class Mine{
     public  static void main(String[] args){
         Console console = System.console();
-        Random rm = new Random();
+        Random ran = new Random();
+        while(true){
+	        System.out.println("[Enter]で実行");
+	        int[][] mine = new int[5][5];
+	        int a = Integer.parseInt(console.readLine());
+	        int bom = 0;
 
-        int[][] x = new int[5][5];
-        int input = Integer.parseInt(console.readLine());
+	        for(int bb = 0 ; bb < 25 ; bb++){
+		        int b = ran.nextInt(100);
+		        if(b >= 0 && b < 20){
+		        	bom = 1;
+		        }
+		        for(int i = 0 ; i < 5 ; i++){
+		        	for(int j = 0 ; j < 5 ; j++){
+		        		mine[i][j] = bom;
+		        	}
+		        }
+	        }
 
-
-
-            int Bom = rm.nextInt(100);
-            int bom =0;
-            if(Bom >= 70 && Bom <= 80){
-                bom = 1;
-            }
-            int i = rm.nextInt(6);
-            int j = rm.nextInt(6);
-            System.out.print(x[i] + "\t");
         }
     }
+
 }

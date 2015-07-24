@@ -3636,3 +3636,33 @@ org.eclipse.php.internal.debug.core.PHPExeException: Invalid PHP executable: C:\
 	at org.eclipse.php.internal.debug.core.PHPDebugPlugin$PostStart.access$0(PHPDebugPlugin.java:103)
 	at org.eclipse.php.internal.debug.core.PHPDebugPlugin$PostStart$1.run(PHPDebugPlugin.java:81)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-07-24 14:50:48.278 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.php.debug.core 4 4 2015-07-24 15:02:36.122
+!MESSAGE Could not obtain PHP executable info.
+!STACK 0
+org.eclipse.php.internal.debug.core.PHPExeException: Invalid PHP executable: C:\app\pleiades\xampp\php\php.exe.
+	at org.eclipse.php.internal.debug.core.PHPExeUtil.getPHPInfo(PHPExeUtil.java:203)
+	at org.eclipse.php.internal.debug.core.preferences.PHPexeItem.detectFromPHPExe(PHPexeItem.java:128)
+	at org.eclipse.php.internal.debug.core.preferences.PHPexeItem.<init>(PHPexeItem.java:114)
+	at org.eclipse.php.internal.debug.core.preferences.PHPexes.load(PHPexes.java:513)
+	at org.eclipse.php.internal.debug.core.preferences.PHPexes.<init>(PHPexes.java:98)
+	at org.eclipse.php.internal.debug.core.preferences.PHPexes.getInstance(PHPexes.java:90)
+	at org.eclipse.php.internal.debug.core.debugger.AbstractDebuggerSettingsProvider.exists(AbstractDebuggerSettingsProvider.java:231)
+	at org.eclipse.php.internal.debug.core.debugger.AbstractDebuggerSettingsProvider.load(AbstractDebuggerSettingsProvider.java:296)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsProviderRegistry.fetchProviders(DebuggerSettingsProviderRegistry.java:154)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsProviderRegistry.readFromExtensionPoint(DebuggerSettingsProviderRegistry.java:109)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsProviderRegistry.getProviders(DebuggerSettingsProviderRegistry.java:83)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsProviderRegistry.getProvider(DebuggerSettingsProviderRegistry.java:74)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsManager.<init>(DebuggerSettingsManager.java:173)
+	at org.eclipse.php.internal.debug.core.debugger.DebuggerSettingsManager.<clinit>(DebuggerSettingsManager.java:40)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin$PostStart.perform(PHPDebugPlugin.java:117)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin$PostStart.access$0(PHPDebugPlugin.java:103)
+	at org.eclipse.php.internal.debug.core.PHPDebugPlugin$PostStart$1.run(PHPDebugPlugin.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
