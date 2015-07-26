@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="3" timestamp="1437889440905" analysisTimestamp="1437889440533" release="">
+  <Project projectName="Games">
+    <Jar>C:\Users\User\Documents\java\Java_Eclipse\Games\bin\mine.class</Jar>
+    <AuxClasspathEntry>C:\Users\User\Documents\java\Java_Eclipse\Games\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_51\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\User\Documents\java\Java_Eclipse\Games\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="lib.Input">
+      <SourceLine classname="lib.Input" sourcefile="Input.java" sourcepath="lib/Input.java"/>
+    </Class>
+    <Field classname="lib.Input" name="CR" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="lib.Input" start="6" end="6" startBytecode="0" endBytecode="0" sourcefile="Input.java" sourcepath="lib/Input.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="lib.Input">
+      <SourceLine classname="lib.Input" sourcefile="Input.java" sourcepath="lib/Input.java"/>
+    </Class>
+    <Field classname="lib.Input" name="CR_LEN" signature="I" isStatic="true">
+      <SourceLine classname="lib.Input" start="7" end="7" startBytecode="0" endBytecode="0" sourcefile="Input.java" sourcepath="lib/Input.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="mine">
+      <SourceLine classname="mine" start="5" end="67" sourcefile="mine.java" sourcepath="mine.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="mine">
+      <SourceLine classname="mine" sourcefile="mine.java" sourcepath="mine.java"/>
+    </Class>
+    <Method classname="mine" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="mine" start="8" end="33" startBytecode="0" endBytecode="769" sourcefile="mine.java" sourcepath="mine.java"/>
+    </Method>
+    <String value="mine"/>
+    <Type descriptor="[[I"/>
+    <SourceLine classname="mine" start="9" end="9" startBytecode="10" endBytecode="10" sourcefile="mine.java" sourcepath="mine.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 26 Jul 2015 14:42:31 +0900" total_classes="1" referenced_classes="14" total_bugs="4" total_size="44" num_packages="2" java_version="1.8.0_51" vm_version="25.51-b03" cpu_seconds="1.64" clock_seconds="0.37" peak_mbytes="813.48" alloc_mbytes="910.50" gc_seconds="0.03" priority_2="4">
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="44" priority_2="2">
+      <ClassStats class="mine" sourceFile="mine.java" interface="false" size="44" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="116" invocations="359" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="30911" standardDeviationMircosecondsPerInvocation="1670"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="61" invocations="2" avgMicrosecondsPerInvocation="30621" maxMicrosecondsPerInvocation="51857" standardDeviationMircosecondsPerInvocation="21235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="37" invocations="359" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="504" standardDeviationMircosecondsPerInvocation="54"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="18" invocations="14" avgMicrosecondsPerInvocation="1288" maxMicrosecondsPerInvocation="5999" standardDeviationMircosecondsPerInvocation="1584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="15" invocations="68" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="2001" standardDeviationMircosecondsPerInvocation="289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="12" invocations="14" avgMicrosecondsPerInvocation="918" maxMicrosecondsPerInvocation="4210" standardDeviationMircosecondsPerInvocation="1045"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1437889285580" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1437889285592" release="" codeSize="85" numClasses="2"/>
+    <AppVersion sequence="2" timestamp="1437889286005" release="" codeSize="41" numClasses="1"/>
+  </History>
+</BugCollection>

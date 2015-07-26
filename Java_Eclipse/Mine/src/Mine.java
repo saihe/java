@@ -9,6 +9,7 @@ public class Mine{
         Random ran = new Random();
         while(true){
 	        System.out.println("[Enter]で実行");
+	        console.readLine(a);
 	        int[][] mine = new int[5][5];
 	        int a = Input.getInt();
 	        int[] bom = new int[25];
