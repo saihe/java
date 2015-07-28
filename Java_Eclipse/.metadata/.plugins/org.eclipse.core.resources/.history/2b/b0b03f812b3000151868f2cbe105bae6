@@ -1,9 +1,0 @@
-
-public class Hairetsu7 {
-	public static void main(String[] args){
-		int[] n = new int[3] ;
-		for(num : n){
-			System.out.println(num);
-		}
-	}
-}

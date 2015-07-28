@@ -1,3 +1,0 @@
-public class List {
-	String[][] list = new String[6][];
-

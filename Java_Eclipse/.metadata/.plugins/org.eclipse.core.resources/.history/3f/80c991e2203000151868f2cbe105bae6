@@ -1,6 +1,0 @@
-public class Break1 {
-	public static void main(String[] args){
-		int vote, ok = 0 , ng = 0;
-
-	}
-}
